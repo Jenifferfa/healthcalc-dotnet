@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>healthcalc_pack_dotnet</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>healthcalc projeto pos</Title>
+    <Description>Projeto da pós graduação - projeto integrado </Description>
+    <PackageIcon>Captura de tela 2023-10-12 003844.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="Captura de tela 2023-10-12 003844.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
