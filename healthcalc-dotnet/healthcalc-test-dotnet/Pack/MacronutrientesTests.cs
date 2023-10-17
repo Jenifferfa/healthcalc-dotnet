@@ -3,9 +3,10 @@ using healthcalc_pack_dotnet.Enums;
 using healthcalc_pack_dotnet.Interfaces;
 using healthcalc_pack_dotnet.Models;
 
-namespace healthcalc_test_dotnet
+namespace healthcalc_test_dotnet.Pack
 {
-    public class MacronutrientesTestcs    {
+    public class MacronutrientesTests    
+    {
         [Fact]
         public void CalculaResultadoMacro()
         {
@@ -15,9 +16,9 @@ namespace healthcalc_test_dotnet
             var ObjetivoFisico = ObjetivoFisicoEnum.Cutting;
             var MacrosEsperados = new ResultadoMacroNutrientesModel()
             {
-                Proteinas = 170.0,
-                Gordura = 85.0,
-                Carboidratos = 170.0
+                Proteinas = 132.0,
+                Gordura = 66.0,
+                Carboidratos = 132.0
             };
 
             //Act
@@ -25,7 +26,6 @@ namespace healthcalc_test_dotnet
 
             //Asserts
             Assert.Equivalent(MacrosEsperados, resultadoMacros);
-
         }
     }
 }

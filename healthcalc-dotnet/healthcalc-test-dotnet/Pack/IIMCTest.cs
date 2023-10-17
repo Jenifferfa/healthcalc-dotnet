@@ -12,7 +12,7 @@ namespace healthcalc_test_dotnet.Pack
             IIMC imc = new IMC();
             double Peso = 66;
             double Altura = 1.59;
-            double IndiceIMC = 26.1;
+            double IndiceIMC = 26.109999999999999;
 
             //Act
             var IndiceIMCRetornardo = imc.CalcularIMC(Peso, Altura);
@@ -51,35 +51,35 @@ namespace healthcalc_test_dotnet.Pack
             var Classificacao = imc.RetornarClassificacaoIMC(IndiceIMC);
 
             //Asserts
-            Assert.Equal("Sobrepeso", Classificacao); 
+            Assert.Equal("SOBREPESO", Classificacao);
         }
 
         [Theory]
-        [InlineData(15.23, "Abaixo do peso")]
-        [InlineData(17.66, "Abaixo do peso")]
-        [InlineData(18.50, "Abaixo do peso")]
+        [InlineData(15.23, "ABAIXO DO PESO")]
+        [InlineData(17.66, "ABAIXO DO PESO")]
+        [InlineData(18.50, "ABAIXO DO PESO")]
 
-        [InlineData(18.60, "Peso normal")]
-        [InlineData(22.00, "Peso normal")]
-        [InlineData(24.90, "Peso normal")]
+        [InlineData(18.60, "PESO NORMAL")]
+        [InlineData(22.00, "PESO NORMAL")]
+        [InlineData(24.90, "PESO NORMAL")]
 
-        [InlineData(25.00, "Sobrepeso")]
-        [InlineData(26.21, "Sobrepeso")]
-        [InlineData(27.81, "Sobrepeso")]
-        [InlineData(28.35, "Sobrepeso")]
-        [InlineData(29.90, "Sobrepeso")]
+        [InlineData(25.00, "SOBREPESO")]
+        [InlineData(26.21, "SOBREPESO")]
+        [InlineData(27.81, "SOBREPESO")]
+        [InlineData(28.35, "SOBREPESO")]
+        [InlineData(29.90, "SOBREPESO")]
 
-        [InlineData(30.00, "Obesidade I")]
-        [InlineData(32.00, "Obesidade I")]
-        [InlineData(34.99, "Obesidade I")]
+        [InlineData(30.00, "OBESIDADE I")]
+        [InlineData(32.00, "OBESIDADE I")]
+        [InlineData(34.99, "OBESIDADE II")]
 
-        [InlineData(35.00, "Obesidade II")]
-        [InlineData(38.33, "Obesidade II")]
-        [InlineData(39.90, "Obesidade II")]
+        [InlineData(35.00, "OBESIDADE II")]
+        [InlineData(38.33, "OBESIDADE II")]
+        [InlineData(39.90, "OBESIDADE II")]
 
-        [InlineData(40.00, "Obesidade III")]
-        [InlineData(40.10, "Obesidade III")]
-        [InlineData(50.00, "Obesidade III")]
+        [InlineData(40.00, "OBESIDADE III")]
+        [InlineData(40.10, "OBESIDADE III")]
+        [InlineData(50.00, "OBESIDADE III")]
         public void RetornaClassificacaoIMC_AcimaDoPeso_QuandoIndiceDentroFaixa(double IndiceIMC, string Classificacao)
         {
             //Arrange

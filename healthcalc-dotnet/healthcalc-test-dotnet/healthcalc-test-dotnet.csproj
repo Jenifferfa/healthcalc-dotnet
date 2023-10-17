@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>healthcalc_test_dotnet2</RootNamespace>
+    <RootNamespace>healthcalc_test_dotnet</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
@@ -24,7 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\healthcalc-pack-dotnet2\healthcalc-pack-dotnet.csproj" />
     <ProjectReference Include="..\healthcalc-pack-dotnet\healthcalc-pack-dotnet.csproj" />
   </ItemGroup>
 

@@ -14,17 +14,17 @@ namespace healthcalc_pack_dotnet
         public string RetornarClassificacaoIMC(double IMC)
         {
             if (IMC <= 18.5)
-                return "Abaixo do peso";
+                return "ABAIXO DO PESO";
             else if (IMC >= 18.6 && IMC <= 24.9)
-                return "Peso normal";
+                return "PESO NORMAL";
             else if (IMC > 24.9 && IMC <= 29.9)
-                return "Sobrepeso";
+                return "SOBREPESO";
             else if (IMC > 29.9 && IMC <= 34.9)
-                return "Obesidade I";
+                return "OBESIDADE I";
             else if (IMC > 34.9 && IMC <= 39.9)
-                return "Obesidade II";
+                return "OBESIDADE II";
             else
-                return "Obesidade III";
+                return "OBESIDADE III";
         }
     }
 }
