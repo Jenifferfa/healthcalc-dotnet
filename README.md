@@ -1,75 +1,45 @@
-```markdown
-# Projeto de Cálculo de IMC e Macronutrientes em .NET
+# Health calc
 
 ## Descrição
-
-Este é um projeto .NET que fornece funcionalidade para calcular o Índice de Massa Corporal (IMC) e os macronutrientes com base nos dados fornecidos. Ele inclui uma API pública que pode ser consumida para realizar esses cálculos.
+Fornecer ao projeto health calc um pacote para realização do cálculo de IMC e macro nutrientes.
 
 ## Pré-requisitos
 
 - Visual Studio 2019 ou posterior.
-- .NET 5.0 SDK ou posterior.
+- .NET 7.0 SDK ou posterior.
 - xUnit.net para a execução dos testes
 
 ## Configuração do Projeto
 
 1. Clone este repositório em sua máquina local:
 ```
-
-git clone https://github.com/seurepositorio/seuprojeto.git
-
+https://github.com/Jenifferfa/healthcalc-dotnet.git
 ```
 
-2. Abra o projeto em sua IDE (como o Visual Studio).
+2. Certifique-se de que você tem o .NET 7.0 SDK instalado.
 
-3. Certifique-se de que você tem o .NET 5.0 SDK instalado.
+3. Restaure as dependências do NuGet usando o seguinte comando
 
-4. Restaure as dependências do NuGet usando o seguinte comando
 
-```
+- Selecione o comando de menu ferramentas > NuGet Gerenciador de Pacotes > Gerenciador de Pacotes Configurações.
+- Marque as duas opções em Restauração de Pacote.
+- Selecione OK.
+- Compile o projeto novamente.
 
-dotnet restore:
-
-```
 
 ## Estrutura do Projeto
 
-- `IMCCalculator`: O núcleo do projeto que contém as classes para calcular o IMC e os macronutrientes.
-- `IMCCalculator.Tests`: Testes unitários usando xUnit.net.
 
 ## Executando Testes
 
-Para executar os testes unitários, use o seguinte comando:
+
+## Uso do pacote
+
+Você pode usar opacote fornecido para calcular o IMC e os macronutrientes. O pacote está disponível no NuGet. Para instalá-lo, execute o seguinte comando:
 
 ```
+dotnet add package healthcalc-pack-dotnet2 --version 1.0.0
 
-dotnet test IMCCalculator.Tests
-
-```
-
-## Uso da API
-
-Você pode usar a API fornecida para calcular o IMC e os macronutrientes. A API está disponível como um pacote NuGet. Para instalá-lo, execute o seguinte comando:
-
-```
-
-dotnet add package IMCCalculator
-
-````
-
-Exemplo de uso da API:
-
-```csharp
-using IMCCalculator;
-
-double weightKg = 70;
-double heightCm = 170;
-
-var imc = IMCCalculator.CalculateIMC(weightKg, heightCm);
-var macronutrients = IMCCalculator.CalculateMacronutrients(weightKg, heightCm);
-
-Console.WriteLine($"IMC: {imc}");
-Console.WriteLine($"Macronutrientes: Proteína {macronutrients.Protein}g, Carboidratos {macronutrients.Carbohydrates}g, Gordura {macronutrients.Fat}g");
 ````
 
 ## Contribuição
@@ -86,11 +56,4 @@ Se desejar contribuir para este projeto, siga estas etapas:
 Seu Nome
 Seu E-mail
 
-## Licença
 
-Este projeto é licenciado sob a Licença MIT. Consulte o arquivo `LICENSE` para obter mais informações.
-
-```
-
-Certifique-se de substituir os marcadores de posição (como `seurepositorio`, `seuprojeto`, `Seu Nome` e `Seu E-mail`) com as informações reais do seu projeto.
-```
