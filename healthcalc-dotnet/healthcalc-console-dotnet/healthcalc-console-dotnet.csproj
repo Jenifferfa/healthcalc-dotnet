@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="healthcalc-pack-dotnet" Version="1.0.0" />
+    <PackageReference Include="healthcalc-pack-dotnet2" Version="1.0.0" />
   </ItemGroup>
-
 </Project>

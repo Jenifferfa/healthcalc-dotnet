@@ -2,11 +2,11 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>healthcalc_pack_dotnet</RootNamespace>
+    <RootNamespace>healthcalc_path_dotnet</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Title>healthcalc projeto pos</Title>
-    <Description>Projeto da pós graduação - projeto integrado </Description>
+    <Title>Trabalho da pós graduação, calculo do IMC e macro nutrientes</Title>
+    <Authors>Jeniffer Santos Silva</Authors>
     <PackageIcon>Captura de tela 2023-10-12 003844.png</PackageIcon>
   </PropertyGroup>
 
