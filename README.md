@@ -1,4 +1,4 @@
-# Health calc
+# Health calc 💪
 
 ## Descrição
 Fornecer ao projeto health calc um pacote para realização do cálculo de IMC e macro nutrientes.
@@ -51,9 +51,9 @@ Se desejar contribuir para este projeto, siga estas etapas:
 3. Faça suas alterações e adicione testes, se necessário.
 4. Envie um pull request.
 
-## Autor
-
-Seu Nome
-Seu E-mail
+## Autores
+- Jeniffer Santos
+- Silas Ribeiro
+- Vinicius Oliveira
 
 
