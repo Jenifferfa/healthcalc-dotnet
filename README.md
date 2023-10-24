@@ -20,11 +20,10 @@ https://github.com/Jenifferfa/healthcalc-dotnet.git
 
 3. Restaure as dependências do NuGet usando o seguinte comando
 
-
-- Selecione o comando de menu ferramentas > NuGet Gerenciador de Pacotes > Gerenciador de Pacotes Configurações.
-- Marque as duas opções em Restauração de Pacote.
-- Selecione OK.
-- Compile o projeto novamente.
+  - Selecione o comando de menu ferramentas > NuGet Gerenciador de Pacotes > Gerenciador de Pacotes Configurações.
+  - Marque as duas opções em Restauração de Pacote.
+  - Selecione OK.
+  - Compile o projeto novamente.
 
 
 ## Estrutura do Projeto
