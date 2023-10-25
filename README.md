@@ -29,7 +29,7 @@ A determinação dos macronutrientes fornece uma orientação dietética persona
 ## Pré-requisitos
 
 - Visual Studio 2022 ou posterior.
-- .NET 8.0 SDK.
+- .NET 7.0 SDK.
 - xUnit.net para a execução dos testes
 
 ## Configuração do Projeto
@@ -39,7 +39,7 @@ A determinação dos macronutrientes fornece uma orientação dietética persona
 https://github.com/Jenifferfa/healthcalc-dotnet.git
 ```
 
-2. Certifique-se de que você tem o .NET 8.0 SDK instalado.
+2. Certifique-se de que você tem o .NET 7.0 SDK instalado.
 
 3. Restaure as dependências do NuGet usando o seguinte comando
 
@@ -62,7 +62,7 @@ Para verificar a cobertura de testes instalar a extensão fine code coverage
 Você pode usar opacote fornecido para calcular o IMC e os macronutrientes. O pacote está disponível no NuGet. Para instalá-lo, execute o seguinte comando:
 
 ```
-dotnet add package healthcalc-pack-dotnet2 --version 1.0.0
+dotnet add package healthcalc-pack-dotnet2 --version 2.0.0
 
 ````
 
