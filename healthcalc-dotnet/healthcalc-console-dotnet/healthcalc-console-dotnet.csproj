@@ -2,13 +2,17 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <RootNamespace>healthcalc_console_dotnet</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="healthcalc-pack-dotnet2" Version="1.0.0" />
+    <Content Remove="C:\Users\Jenif\.nuget\packages\healthcalc-path-dotnet\2.0.0\contentFiles\any\net7.0\icone.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="healthcalc-path-dotnet" Version="2.0.0" />
   </ItemGroup>
 </Project>
